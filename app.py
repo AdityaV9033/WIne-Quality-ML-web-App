@@ -5,9 +5,6 @@ st.title('Wine Quality ML web App')
 df = pd.read_csv('Processed_Wine_dataset.csv')
 df.head()
 
-
-
-
 st.sidebar.header("Select the ML model you want to use")
 Drop_options = ["Random Forest Regression", "Bagging with Decision Tree Regressor", "KNN Regression", "Bagging with Linear Regressor"]
 Model_choice = st.sidebar.selectbox("Drop_options", options=Drop_options)
