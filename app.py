@@ -85,17 +85,17 @@ sulphates = st.slider("Sulphates", min_value=0.33, max_value=2.0,step=0.05)
 st.text(f"Sulphates value: {sulphates}")
 alcohol = st.slider("alcohol", min_value=8.4, max_value=14.9,step=0.1)
 st.text(f"alcohol value: {alcohol}")
-input={'fixed_acidity':fixed_acidity,
-       'volatile_acidity':volatile_acidity,
-       'citric_acid':citric_acid,
-       'residual_sugar':residual_sugar,
-       'chlorides':chlorides,
-       'free_sulfur_dioxide':free_sulfur_dioxide,
-       'total_sulfur_dioxide':total_sulfur_dioxide,
-       'density':density,
-       'pH':pH,
-       'sulphates':sulphates,
-       'alcohol':alcohol}
+input={'fixed acidity':fixed_acidity,
+       'volatile acidity':volatile_acidity,
+       'citric acid':citric_acid,
+       'Residual sugar':residual_sugar,
+       'Chlorides':chlorides,
+       'free sulfur dioxide':free_sulfur_dioxide,
+       'total sulfur dioxide':total_sulfur_dioxide,
+       'Density':density,
+       'pH value':pH,
+       'Sulphates':sulphates,
+       'Alcohol':alcohol}
 input_X=pd.DataFrame(input, index=['value'])
 st.text("Input value of features:")
 input_X.T
