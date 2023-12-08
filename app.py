@@ -79,7 +79,7 @@ density = st.slider("density", min_value=0.990070, max_value=1.003690,step=0.005
 st.text(f"density value: {density}")
 pH = st.slider("pH", min_value=2.74, max_value=4.01,step=0.02)
 st.text(f"pH value: {pH}")
-Sulphates = st.slider("Sulphates", min_value=0.33, max_value=2,step=0.05)
+Sulphates = st.slider("Sulphates", min_value=0.33, max_value=2.0,step=0.05)
 st.text(f"Sulphates value: {Sulphates}")
 alcohol = st.slider("alcohol", min_value=8.4, max_value=14.9,step=0.1)
 st.text(f"alcohol value: {alcohol}")
