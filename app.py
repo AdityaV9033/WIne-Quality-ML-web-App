@@ -65,7 +65,7 @@ Fixed_Acidity = st.slider("Fixed Acidity", min_value=4.6, max_value=15.9, step=0
 st.text(f"Fixed acidity value: {Fixed_Acidity}")
 Volatile_acidity = st.slider("Volatile_acidity", min_value=0.12, max_value=1.58, step=0.05)
 st.text(f"Volatile acidity value: {Volatile_acidity}")
-citric_acid = st.slider("Citric Acid", min_value=0, max_value=1,step=0.1)
+citric_acid = st.slider("Citric Acid", min_value=0.0, max_value=1.0,step=0.1)
 st.text(f"citric acid value: {citric_acid}")
 Residual_sugar = st.slider("Residual Sugar", min_value=0.9, max_value=15.5,step=0.1)
 st.text(f"Residual sugar value: {Residual_sugar}")
