@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 st.title('Wine Quality ML web App')
-df1 = pd.read_csv('Processed_Wine_dataset.csv')
-df1.head()
+df = pd.read_csv('Processed_Wine_dataset.csv')
+df.head()
 cols=['quality','Id']
-x = df1.drop(cols,axis=1)
-y = df1['quality']
+x = df.drop(cols,axis=1)
+y = df['quality']
 print(x.shape)
 print(y.shape)
 print(type(x))
