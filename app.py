@@ -63,8 +63,8 @@ st.sidebar.header("Select the ML model you want to use")
 Drop_options = ["Random Forest with Gini Classifier", "Random Forest with Entropy Classifier","Logistic Regression", "Decision Tree Classifier"]
 Model_choice = st.sidebar.selectbox("Drop_options", options=Drop_options)
 
-fixed_acidity = st.slider("Fixed Acidity", min_value=4.6, max_value=15.9, step=0.1)
-st.text(f"Fixed acidity value: {fixed_acidity}")
+Fixed_acidity = st.slider("Fixed Acidity", min_value=4.6, max_value=15.9, step=0.1)
+st.text(f"Fixed acidity value: {Fixed_acidity}")
 volatile_acidity = st.slider("Volatile acidity", min_value=0.12, max_value=1.58, step=0.05)
 st.text(f"Volatile acidity value: {volatile_acidity}")
 citric_acid = st.slider("Citric Acid", min_value=0.0, max_value=1.0,step=0.1)
