@@ -2,13 +2,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 st.title('Wine Quality ML web App')
-df = pd.read_csv('Processed_Wine_dataset.csv')
-df.head()
-x = df.iloc[:,:-1]  
-y = df.iloc[:,-1]   
+df1 = pd.read_csv('Processed_Wine_dataset.csv')
+df1.head()
+cols=['quality','Id']
+x = df1.drop(cols,axis=1)
+y = df1['quality']
 print(x.shape)
 print(y.shape)
-
+print(type(x))
+print(type(y))
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=22)
 print(x_train.shape)
