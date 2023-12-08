@@ -51,8 +51,8 @@ for clf_name, clf in classifiers.items():
     print('\nClassification Report:\n\n',classification_report(y_test,y_pred))
     accuracy = accuracy_score(y_test, y_pred)
     print(clf_name, "accuracy :",accuracy)
-    print('Training Score',clf.score(x_train,y_train))  # Training Accuracy
-    print('Testing Score',clf.score(x_test,y_test))         # Testing Accuracy
+    print('Training Score',clf.score(x_train,y_train))  
+    print('Testing Score',clf.score(x_test,y_test))        
     results[clf_name] = accuracy
     model.append(m)
     print("")
@@ -83,16 +83,16 @@ sulphates = st.slider("Sulphates", min_value=0.33, max_value=2.0,step=0.05)
 st.text(f"Sulphates value: {sulphates}")
 alcohol = st.slider("alcohol", min_value=8.4, max_value=14.9,step=0.1)
 st.text(f"alcohol value: {alcohol}")
-input={'Fixed Acidity':Fixed_Acidity,
-       'Volatile acidity':Volatile_acidity,
-       'citric acid':citric_acid,
-       'Residual Sugar':Residual_sugar,
-       'chlorides':Chlorides,
-       'Free sulphur dioxide':Free_sulfur_dioxide,
-       'Total sulphur dioxide':Total_sulfur_dioxide,
+input={'Fixed Acidity':fixed acidity,
+       'Volatile acidity':volatile acidity,
+       'citric acid':citric acid,
+       'Residual Sugar':residual sugar,
+       'chlorides':chlorides,
+       'Free sulphur dioxide':free sulfur dioxide,
+       'Total sulphur dioxide':total sulfur dioxide,
        'density':density,
        'pH':pH,
-       'Sulphates':Sulphates,
+       'Sulphates':sulphates,
        'alcohol':alcohol}
 input_X=pd.DataFrame(input, index=['value'])
 st.text("Input value of features:")
