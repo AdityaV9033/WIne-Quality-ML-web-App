@@ -65,37 +65,37 @@ Model_choice = st.sidebar.selectbox("Drop_options", options=Drop_options)
 
 Fixed_acidity = st.slider("Fixed Acidity", min_value=4.6, max_value=15.9, step=0.1)
 st.text(f"Fixed acidity value: {Fixed_acidity}")
-volatile_acidity = st.slider("Volatile acidity", min_value=0.12, max_value=1.58, step=0.05)
-st.text(f"Volatile acidity value: {volatile_acidity}")
-citric_acid = st.slider("Citric Acid", min_value=0.0, max_value=1.0,step=0.1)
-st.text(f"citric acid value: {citric_acid}")
-residual_sugar = st.slider("Residual Sugar", min_value=0.9, max_value=15.5,step=0.1)
-st.text(f"Residual sugar value: {residual_sugar}")
-chlorides = st.slider("Chlorides", min_value=0.012, max_value=0.611,step=0.05)
-st.text(f"Chlorides value: {chlorides}")
-free_sulfur_dioxide = st.slider("Free sulfur dioxide", min_value=1, max_value=68,step=1)
-st.text(f"Free sulfur dioxide value: {free_sulfur_dioxide}")
-total_sulfur_dioxide = st.slider("Total sulfur dioxide", min_value=6, max_value=289,step=1)
-st.text(f"Total sulfur dioxide value: {total_sulfur_dioxide}")
-density = st.slider("density", min_value=0.990070, max_value=1.003690,step=0.005)
-st.text(f"density value: {density}")
-pH = st.slider("pH", min_value=2.74, max_value=4.01,step=0.02)
-st.text(f"pH value: {pH}")
-sulphates = st.slider("Sulphates", min_value=0.33, max_value=2.0,step=0.05)
-st.text(f"Sulphates value: {sulphates}")
-alcohol = st.slider("alcohol", min_value=8.4, max_value=14.9,step=0.1)
-st.text(f"alcohol value: {alcohol}")
-input={'fixed acidity':fixed_acidity,
-       'volatile acidity':volatile_acidity,
-       'citric acid':citric_acid,
-       'Residual sugar':residual_sugar,
-       'Chlorides':chlorides,
-       'free sulfur dioxide':free_sulfur_dioxide,
-       'total sulfur dioxide':total_sulfur_dioxide,
-       'Density':density,
-       'pH value':pH,
-       'Sulphates':sulphates,
-       'Alcohol':alcohol}
+Volatile_acidity = st.slider("Volatile acidity", min_value=0.12, max_value=1.58, step=0.05)
+st.text(f"Volatile acidity value: {Volatile_acidity}")
+Citric_acid = st.slider("Citric Acid", min_value=0.0, max_value=1.0,step=0.1)
+st.text(f"citric acid value: {Citric_acid}")
+Residual_sugar = st.slider("Residual Sugar", min_value=0.9, max_value=15.5,step=0.1)
+st.text(f"Residual sugar value: {Residual_sugar}")
+Chlorides = st.slider("Chlorides", min_value=0.012, max_value=0.611,step=0.05)
+st.text(f"Chlorides value: {Chlorides}")
+Free_sulfur_dioxide = st.slider("Free sulfur dioxide", min_value=1, max_value=68,step=1)
+st.text(f"Free sulfur dioxide value: {Free_sulfur_dioxide}")
+Total_sulfur_dioxide = st.slider("Total sulfur dioxide", min_value=6, max_value=289,step=1)
+st.text(f"Total sulfur dioxide value: {Total_sulfur_dioxide}")
+Density = st.slider("density", min_value=0.990070, max_value=1.003690,step=0.005)
+st.text(f"density value: {Density}")
+PH = st.slider("pH value", min_value=2.74, max_value=4.01,step=0.02)
+st.text(f"pH value: {PH}")
+Sulphates = st.slider("Sulphates", min_value=0.33, max_value=2.0,step=0.05)
+st.text(f"Sulphates value: {Sulphates}")
+Alcohol = st.slider("alcohol", min_value=8.4, max_value=14.9,step=0.1)
+st.text(f"alcohol value: {Alcohol}")
+input={'fixed_acidity':Fixed_acidity,
+       'volatile_acidity':Volatile_acidity,
+       'citric_acid':Citric_acid,
+       'residual_sugar':Residual_sugar,
+       'chlorides':Chlorides,
+       'free_sulfur_dioxide':Free_sulfur_dioxide,
+       'total_sulfur_dioxide':Total_sulfur_dioxide,
+       'density':Density,
+       'pH':PH,
+       'sulphates':Sulphates,
+       'alcohol':Alcohol}
 input_X=pd.DataFrame(input, index=['value'])
 st.text("Input value of features:")
 input_X.T
